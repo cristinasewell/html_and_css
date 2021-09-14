@@ -1,49 +1,263 @@
-/* Create four equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 25%;
+body {
+  background: rgb(216, 213, 213);
+  align-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+img.little-image {
+  max-width: 180px;
+  max-height: 120px;
+}
+
+/* main container - used on landing page */
+.container {
+  display: grid;
+  grid-template-columns: 100%;
+  margin-top: 40px;
+  padding: 10px;
+  grid-gap: 80px 10px;
+  align-content: center;
+}
+
+.container-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* overview area - landing page */
+.col-md-8 {
+  background-color: rgb(216, 213, 213);
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* visualizations - landing page */
+.col-md-4 {
+  background-color:rgb(216, 213, 213);
+  font-size: 16px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+/* a cell from the grid */
+div.cell {
+  background: white !important;
+  padding: 5px;
+  border: 2px solid red;
+}
+
+
+/* horizontal line */
+hr.line1{
+	border-top: 2px solid #363434;
+}
+
+ 
+.box {
+  /* position: relative; */
+  width: 1200px;
+  height: 1200px;
+  background: rgb(194, 12, 12);
+}
+
+/* box for overview on landing page */
+.box-1 {
+  max-width: 700px;
+  max-height: 400px;
+  background: white;
+  align-items: center;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  align-content: center;
+  border: 2px solid black;
+  margin-top: 10px;
+}
+
+/* paragraph */
+p {
+  padding: 20px;
+}
+
+/* box for visualizations on landing page */
+.box-2 {
+  /* display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); */
+/* #grid-template-columns: repeat(2, 1fr); */
+  /* grid-template-columns: 45% 45%; */
+  width: 300px;
+  height: 500px;
+  background: white;
+  /* grid-column-gap: 0;
+  grid-row-gap: 20px; */
+  align-items: center;
+  align-self: center;
+  /* padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 30px; */
+  align-content: center;
+  border: 2px solid black;
+}
+
+.row {
+  background-color: white !important;
+}
+
+img {
+  float: left;
+  max-width: 60%;
+  max-height: 60%;
+}
+
+img.resize {
+  max-width:50%;
+  max-height:50%;
+  float: left;
+}
+
+
+.post {
+  margin-top: 20px;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+
+
+
+h1 {
+  font-size: 20px;
+  color: rgb(85, 177, 120);
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+h2 {
+  font-size: 20px;
+  font-style: italic;
+  color: rgb(4, 53, 23);
+  font-weight: bold;
+}
+
+
+.navbar-brand {
+  background-color: rgb(85, 177, 120);
+  font-size: 20px;
+  font-weight: bold;
+  color: white !important;
+  display: inline-block;
+  padding: 4px;
+  margin: 0;
+}
+
+
+/* grid container */
+#container-vis {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 1200px;
+  height: 700px;
+  background: white;
+  align-items: center;
+  align-self: center;
+  align-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+ 
+/* .cell {
+  background: #ffffff;
+  padding: 1rem;
+  height: 4rem;
+} */
+
+
+
+.spancol {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* Here we define some styles that will ONLY be applied at screen sizes below 900 pixels */
+@media (max-width: 900px) {
+  .container-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    row-gap: 0px;
+    align-content: center;
+    /* max-width: 100%; */
   }
+
+  img.little-image {
+    max-width: 90%;
+    max-height: 90%;
+  }
+
   
-  /* On screens that are 992px wide or less, go from four columns to two columns */
-  @media screen and (max-width: 992px) {
-    .column {
-      width: 50%;
-    }
+  .box-2 {
+    grid-template-columns: repeat(1, 1fr);
+    /* grid-template-columns: 100%%;
+    grid-column-gap: 5%;
+    grid-row-gap: 40px; */
   }
-  
-  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-  }
-
-  @media only screen and (orientation: landscape) {
-  }
-
-  li a {
-    display: block;
-    color: #000;
-    padding: 8px 16px;
-    text-decoration: none;
-  }
-  
-  /* Change the link color on hover */
-  li a:hover {
-    background-color: rgb(94, 105, 110);
-    color: white;
-  }
-
-  ul li ul {
-    visibility: hidden;
-    opacity: 0;
-    position: absolute;
-    transition: all 0.5s ease;
-    margin-top: 1rem;
-    left: 0;
-    display: none;
-  }
-
-  /* .nav-link {
-    visibility: hidden;
+  /* .box-1 {
+    width: 700px;
+    height: 600px;
+    background: white;
+    align-items: center;
+    align-self: center;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
   } */
+
+  /* .box-2 {
+    width: 700px;
+    height: 600px;
+    grid-row: 2;
+    grid-template-columns: 1fr !important;
+    background: white;
+    align-items: center;
+    align-self: center;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 10px;
+  } */
+
+  .post {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .navbar {
+    background-color:rgb(85, 177, 120) !important;
+}
+  .navbar-nav {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+  }
+
+}
+
+
+.jumbotron {
+  background-color: white;
+  padding: 20px;
+
+}
