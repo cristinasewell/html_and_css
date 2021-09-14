@@ -110,6 +110,9 @@ img.resize {
   max-height:50%;
   float: left;
 }
+img.little-image:hover {
+  border: 2px solid green;
+}
 
 h1 {
   font-size: 20px;
