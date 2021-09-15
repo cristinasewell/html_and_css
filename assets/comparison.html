@@ -43,69 +43,61 @@
 
 
 <body>
-  <div class="container-4">
+  <div class="container-center">
 
     <div class="row">
-      <!-- first column in the row from BASE GRID -->
-      <div class="col-md-11">
-        <!-- <div class="cell"> -->
+      <!-- first row -->
+      <div class="col-sm-12 col-md-10 col-lg-10">
           <h1>Comparisons: Latitude vs. X</h1>
           <br>
-          <hr class="line1">
+          <hr class="vertical-line">
           <h3>Click on any plots to get in-depth analysis</h3>
           <br>
-        <!-- </div> -->
       </div>
+      <!-- closing first row -->
     </div>
 
-    <div class="row">
-      <div class="col-md-11">
-        <div class="container-3">
-
-          <!-- first picture -->
-          <div class="cell">
-              <h4>vs. Max Temperature</h4>
-              <a href="../visualizations/temp.html">
-                <img class="big"  src="../Resources/LATvsMax Temperature.png" alt="Temperature">
-              </a>
-          </div>
-
-          <!-- second picture -->
-          <div class="cell">
-            <h4>vs. Cloudiness</h4>
-            <a href="../visualizations/cloudiness.html">
-              <img  class="big"   src="../Resources/LATvsCloudiness.png" alt="Cloudiness">
-            </a>
-          </div>
-
-          </div>
+    <div class="row" id="row-special">
+    
+      <div class="col-sm-12 col-md-5 col-lg-5">
+        <h4>vs. Max Temperature</h4>
+        <a href="../visualizations/temp.html">
+          <img class="big"  src="../Resources/LATvsMax Temperature.png" alt="Temperature">
+        </a>
+        <!-- closing the first column in this row -->
         </div>
-      </div>
 
+        <div class="col-sm-12 col-md-5 col-lg-5">
+          <h4>vs. Cloudiness</h4>
+          <a href="../visualizations/cloudiness.html">
+            <img  class="big"   src="../Resources/LATvsCloudiness.png" alt="Cloudiness">
+          </a>
+          <!-- closing second column in this row -->
+          </div>
 
-      <div class="row">
-        <div class="col-md-11">
-          <div class="container-3">
-  
-            <!-- third picture -->
-            <div class="cell">
+          <!-- closing second row -->
+          </div>
+
+      <div class="row" id="row-special">
+        <div class="col-sm-12 col-md-5 col-lg-5">
                 <h4>vs. Humidity</h4>
                 <a href="../visualizations/humidity.html">
                   <img class="big"  src="../Resources/LATvsHumidity.png" alt="Humidity">
                 </a>
-            </div>
-  
-            <!-- fourth picture -->
-            <div class="cell">
-              <h4>vs. Windspeed</h4>
-              <a href="../visualizations/windspeed.html">
-                <img  class="big"  src="../Resources/LATvsWind Speed.png" alt="Windspeed">
-              </a>
-            </div>
-  
-            </div>
-          </div>
+        <!-- closing first column in second row -->
         </div>
+  
+        <div class="col-sm-12 col-md-5 col-lg-5">
+          <h4>vs. Windspeed</h4>
+          <a href="../visualizations/windspeed.html">
+            <img  class="big"  src="../Resources/LATvsWind Speed.png" alt="Windspeed">
+          </a>
+  
+        <!-- closing second column in third row -->
+        </div>
+    <!-- closing third row -->
+    </div>
+  <!-- closing container -->
   </div>
       
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -42,19 +42,16 @@
 
 
   <body>
-    <!-- creates BASE GRID-->
+    <!-- place everything in the container -->
     <div class="container">
-      <!-- row in BASE GRID -->
+      <!-- place everythin in this row -->
       <div class="row">
-
-        <!-- first column in the row from BASE GRID -->
-        <div class="col-md-8">
-          <div class="cell">
+        <!-- column for summary -->
+        <div class="col-sm-12 col-md-7 col-lg-7">
             <h1>Summary: Latitude vs. X</h1>
             <br>
-            <hr class="line1">
-          </div>
-          <div class="cell">
+            <hr class="vertical-line">
+            <br>
               <img class="resize" src="Resources/LATvsMax Temperature.png" alt="Latitude vs. Temperature">
               <p>The purpose of this project was to analyze how weather changes 
                 as you get closer to the equator. To accomplish this analysis, we first
@@ -69,185 +66,33 @@
                 source data and visualizaztions created as part of the analysis,
                 as well as explanations and descriptions of any trends and correlations witnessed.
               </p>
-          </div>
-        <!-- close first column in BASE GRID -->
+        <!-- closing first column  -->
         </div>
 
-        <!-- second colun in the row from BASE GRID -->
-        <div class="col-md-4">
-          <!-- the top row  in second column from BASE GRID-->
-          <div class="cell">
+        <!-- second column in the row -->
+        <div class="col-sm-8 col-md-4 col-lg-4" style="height: 90%;">
             <h1>Visualizations</h1>
             <br>
-            <hr class="line1">
+            <hr class="vertical-line">
             <br>
+            <a href="visualizations/cloudiness.html">
+              <img class="little-image" src="Resources/LATvsCloudiness.png" alt="Cloudiness">
+            </a>
+            <a href="visualizations/humidity.html">
+              <img class="little-image" src="Resources/LATvsHumidity.png" alt="Humidity">
+            </a>
+            <a href="visualizations/temp.html">
+              <img class="little-image" src="Resources/LATvsMax Temperature.png" alt="Temperature">
+            </a>
+            <a href="visualizations/windspeed.html">
+              <img class="little-image" src="Resources/LATvsWind Speed.png" alt="Windspeed">
+            </a>
+            <!-- closing second column -->
           </div>
-          <div class="cell">
-            <br>
-          </div>
-          
-          <div class="cell">
-            <!-- SECOND CONTAINER for Visualizations-->
-            <div class="container-2">
-
-              <!-- first picture -->
-              <div class="cell">
-                  <a href="visualizations/cloudiness.html">
-                    <img class="little-image" src="Resources/LATvsCloudiness.png" alt="Cloudiness">
-                  </a>
-              </div>
-
-              <!-- Second picture -->
-              <div class="cell">
-                <a href="visualizations/humidity.html">
-                  <img class="little-image" src="Resources/LATvsHumidity.png" alt="Humidity">
-                </a>
-              </div>
-      
-              <!-- Third picture -->
-              <div class="cell">
-                <a href="visualizations/temp.html">
-                  <img class="little-image" src="Resources/LATvsMax Temperature.png" alt="Temperature">
-                </a>
-              </div>
-
-              <!-- Fourth picture -->
-              <div class="cell">
-                <a href="visualizations/windspeed.html">
-                  <img class="little-image" src="Resources/LATvsWind Speed.png" alt="Windspeed">
-                </a>
-              </div>
-            
-              <!-- close CONTAINER 2 -->
-            </div>
-            <!-- close row -->
-          </div>
-          <!-- close second column in the BASE GRID -->
+          <!-- closing row -->
         </div>
-      <!-- close row in BASE CONTAINER -->
-      </div>
-    <!-- close BASE CONTAINER-->
+        <!-- closing container -->
     </div>
-    
-            <!-- <h1>Summary: Latitude vs. X</h1>
-            <div>
-              <br>
-              <hr class="line1">
-              <br>
-              <img class="resize" src="Resources/LATvsMax Temperature.png" alt="Latitude vs. Temperature">
-              <p>The purpose of this project was to analyze how weather changes 
-                as you get closer to the equator. To accomplish this analysis, we first
-                pulled data from the OpenWeatherMap API to assemble a dataset on 
-                over 500 cities.
-              </p>
-              <br>
-              <p>
-                After assembling the dataset, we used Matplotlib to plot various
-                aspects of the weather vs. latitude. Factors we looked at included:
-                temperature, cloudiness, wind speed, and humidity. This site provides the
-                source data and visualizaztions created as part of the analysis,
-                as well as explanations and descriptions of any trends and correlations witnessed.
-              </p>
-            </div>
-          </div>
-
-        <div class="col-md-3">
-          <div class="box box-2">
-
-            <div class="cell spancol">
-              <h1>Visualizations</h1>
-              <br>
-              <hr class="line1">
-            </div>
-
-
-
-              <div class="cell">
-                <a href="visualizations/cloudiness.html">
-                  <img class="little-image" src="Resources/LATvsCloudiness.png" alt="Temperature">
-                </a>
-              </div>
-
-
-
-              <div class="cell">
-                <a href="visualizations/humidity.html">
-                  <img class="little-image" src="Resources/LATvsHumidity.png" alt="Temperature">
-                </a>
-              </div>
-
- 
-            <div class="cell">
-              <a href="visualizations/temp.html">
-                <img class="little-image" src="Resources/LATvsMax Temperature.png" alt="Temperature">
-              </a>
-            </div>
-
-
-            <div class="cell">
-              <a href="visualizations/windspeed.html">
-                <img class="little-image" src="Resources/LATvsWind Speed.png" alt="Temperature">
-              </a>
-            </div>
-
-
-          </div>
-        </div>
-
-      </div> 
-
-      </div>
-     -->
- 
-
-      <!-- <div class="jumbotron">
-        <h1 class="display-4">Visualizations</h1>
-        <p class="lead">This is a plca inside a container</p>
-        <hr class="my-4">
-        <p>Some more text here</p>
-    </div>
-    </div> -->
-
-
-<!-- <body>
-  <div class="container">
-    <div class="box box-1">
-      <br>
-      <h1>Summary: Latitude vs. X</h1>
-      <hr class="line1">
-      <br>
-      <img id="main-image" src="Resources/LATvsMax Temperature.png" alt="Latitude vs. Temperature">
-        <post>Hello there... here is my box</post>
-    </div>
-    <div class="box box-2">
-      <div class="cell spancol">
-        <h1>Hello there - landing page...</h1>
-        <hr class="line1">
-      </div>
-      <div class="cell">
-        <a href="visualizations/cloudiness.html">
-          <img id="little-image" src="Resources/LATvsCloudiness.png" alt="Temperature">
-        </a>
-      </div>
-      <div class="cell">
-        <a href="visualizations/humidity.html">
-          <img id="little-image" src="Resources/LATvsHumidity.png" alt="Temperature">
-        </a>
-      </div>
-      <div class="cell">
-        <a href="visualizations/temp.html">
-          <img id="little-image" src="Resources/LATvsMax Temperature.png" alt="Temperature">
-        </a>
-      </div>
-      <div class="cell">
-        <a href="visualizations/windspeed.html">
-          <img id="little-image" src="Resources/LATvsWind Speed.png" alt="Temperature">
-        </a>
-      </div>
-    </div>
-  </div>
-</body> -->
-
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
